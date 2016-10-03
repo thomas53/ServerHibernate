@@ -62,6 +62,7 @@ public class DaoPegawai {
 			data.setNama(pegawai.getNama());
 			data.setAlamat(pegawai.getAlamat());
 			data.setJenis_kelamin(pegawai.getJenis_kelamin());
+			data.setFoto(pegawai.getFoto());
 			Golongan gol = (Golongan) session.get(Golongan.class, pegawai.getGolongan().getIdgolongan());
 			data.setGolongan(gol);
 			session.update(data);
